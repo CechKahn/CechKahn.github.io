@@ -1,29 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Photo Album - Free Bulma template</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="stylesheet" href="./custom.css">
+  <style>
+    .navbar, .navbar *{
+      background-color:#130A32;
+      color: white;
+    }
+  </style>
 
-    <!-- Bulma Version 0.6.0 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="./css/Detailed.css">
-    <link rel="stylesheet" href="./custom.css">
-
-    <style>
-        .navbar,
-        .navbar * {
-            background-color: #130A32;
-            color: white;
-            z-index: 100;
-        }
-    </style>
 </head>
 
 <body>
@@ -52,7 +43,7 @@
                     Like
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
+                <a class="navbar-item" href="infopersonal.html">
                     Profile
                 </a>
                 <hr class="navbar-divider">
@@ -69,64 +60,57 @@
     </nav>
 
 
-    <div class="columns body-columns main">
-        <div class="column is-half is-offset-one-quarter">
-            <div class="card">
-                <div class="header">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="./images/profile.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Anna's Home</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="./images/3.jpg" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p>
-                            <strong>House Address</strong>
-                        </p>
-                        1234 High Way, San Francisco, CA, 94035
-                    </div>
-                    <div class="content">
-                        <p>
-                            <strong>House Description</strong>
-                        </p>
-                        The house is 1B1B. It's very convenient to the bus station and supermarket.
-                    </div>
-                    <div class="content">
-                        Estimated Distance Saving :
-                        <strong>5</strong> miles
-                    </div>
-                    <div class="content">
-                        Estimated Time Saving :
-                        <strong>30</strong> minutes
-                    </div>
-
-                    <div class="content" style="height:30px">
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="./images/3.jpg" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="./images/profile.jpg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">Anna's house</p>
+      </div>
     </div>
-
-
+    <div class="content">
+      <strong>House Address</strong>
+      1234 High Way, San Francisco, CA, 94035
     </div>
+    <div class="content">
+      <strong>House Description</strong>
+      The house is 1b1b. It's very convenient to the bus station and supermarket.
+    </div>
+    <div class="content">
+      Estimated Distance Saving: <strong>5</strong> miles
+    </div>
+    <div class="content">
+      Estimated Time Saving : <strong>30</strong> minutes
+    </div>
+  </div>
+    <footer class="card-footer">
+      <a href="Homepage.html" class="card-footer-item">
+        <span class="icon">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </span>
+      </a>
+      <a href="list.html"class="card-footer-item button is-danger">
+          Like
+      </a>
+      <a href="contract.html" class="card-footer-item button is-warning">Contract Owner</a>
+    </footer>
+  </div>
 
 
     <div class="level is-mobile button-panel" style="margin-bottom:0">
         <!-- Left side -->
         <div class="level-left">
             <div class="level-item">
-                <a class="navbar-item" style="border-right: 1px solid lightgrey; ">
+                <a class="navbar-item" style="border-right: 1px solid lightgrey; " href="Homepage.html">
                     <span class="icon">
                         <i class="fa fa-chevron-left" aria-hidden="true"></i>
                     </span>
@@ -136,33 +120,38 @@
                 <a class="button is-danger is-mobile">Like</a>
             </div>
             <div class="level-item">
-
-                <a class="button is-warning">Contact Owner</a>
+                <a class="button is-primary is-mobile">Contact Owner</a>
             </div>
+            <div class="level-item">
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all "navbar-burger" elements
-            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-                // Add a click event on each of them
-                $navbarBurgers.forEach(function ($el) {
-                    $el.addEventListener('click', function () {
-                        // Get the target from the "data-target" attribute
-                        var target = $el.dataset.target;
-                        var $target = document.getElementById(target);
-                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                        $el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
         });
-    </script>
+      }
+
+    });
+  </script>
 </body>
+
 
 </html>

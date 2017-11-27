@@ -6,17 +6,18 @@
     <title>Edit Info</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-    <link rel="stylesheet" href="StyleSheet/editinfo.css">
+    <link rel="stylesheet" href="StyleSheet/editinfo.css">    <link rel="stylesheet" href="custom.css">
+    
 </head>
 <body>
     <section class="editInfoPersonalSection">
         <div class="PersonandHouseInfo">
             <div class="columns is-gapless is-mobile">
                 <div class="column has-text-centered">
-                    <p class = "personalInfo">Personal Information</p>
+                    <a class = "personalInfo" href="editinfopersonal.html">Personal Information</a>
                 </div>
                 <div class="column has-text-centered">
-                    <p class = "houseInfo">House Information</p>
+                    <a class = "houseInfo" href="editinfohouse.html">House Information</a>
                 </div>
             </div>
         </div>
@@ -54,22 +55,28 @@
                     </div>
                 </div>
 
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <div class="level-item">
-                            <a class="button is-white cancleEdit">Cancle</a>
-                        </div>
-                    </div>
-                    <div class="level-right">
-                        <div class="level-item">
-                            <div class="level-item">
-                                <a class="button updateinfo">Update</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                <div class="content" style="height:30px">
+                </div>
+
             </form>
         </div>
     </section>
+
+    <div class="level is-mobile button-panel" style="margin-bottom:0">
+        <!-- Left side -->
+        <div class="level-left">
+            <div class="level-item">
+                <a class="navbar-item" style="border-right: 1px solid lightgrey; " href="Homepage.html">
+                    <span class="icon">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="level-item">
+                <a class="button is-primary" href="editinfohouse.html">Update</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

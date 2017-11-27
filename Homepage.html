@@ -25,13 +25,16 @@
     </style>
 
     <script>
+        var count = 0;
         function saveLike(iconId) {
             var property = document.getElementById(iconId);
-            if (property.color=="#ffffff") {
+            if (count == 0) {
                 property.color = "#ff0000";
+                count = 1;
             }
             else {
                 property.color = "#ffffff";
+                count = 0;
             }
         }
 
@@ -90,7 +93,7 @@
                     Like
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
+                <a class="navbar-item" href="infopersonal.html">
                     Profile
                 </a>
                 <hr class="navbar-divider">
@@ -179,7 +182,7 @@
                         </div>
                         <div class="level-right">
                             <div class="level-item">
-                                <a class="button detailButton">Detail</a>
+                                <a class="button detailButton" href="Detailed.html">Detail</a>
                             </div>
                         </div>
                     </nav>
@@ -219,7 +222,7 @@
                         </div>
                         <div class="level-right">
                             <div class="level-item">
-                                <a class="button detailButton">Detail</a>
+                                <a class="button detailButton" href="Detailed.html">Detail</a>
                             </div>
                         </div>
                     </nav>
@@ -235,9 +238,9 @@
                     </p>
                     <nav class="level is-mobile">
                         <div class="level-left">
-                            <a class="heart-button">
+                            <a class="heart-button" onclick="saveLike()">
                                 <span class="icon is-medium">
-                                    <i id="iconHeart" class="fa fa-heart fa-lg houseIconLiked" onclick="saveLike(this.id)"></i>
+                                    <i class="fa fa-heart fa-lg houseIconLiked"></i>
                                 </span>
                             </a>
                         </div>
@@ -259,7 +262,7 @@
                         </div>
                         <div class="level-right">
                             <div class="level-item">
-                                <a class="button detailButton">Detail</a>
+                                <a class="button detailButton" href="Detailed.html">Detail</a>
                             </div>
                         </div>
                     </nav>
@@ -299,7 +302,7 @@
                         </div>
                         <div class="level-right">
                             <div class="level-item">
-                                <a class="button detailButton">Detail</a>
+                                <a class="button detailButton" href="Detailed.html">Detail</a>
                             </div>
                         </div>
                     </nav>
@@ -339,7 +342,7 @@
                         </div>
                         <div class="level-right">
                             <div class="level-item">
-                                <a class="button detailButton">Detail</a>
+                                <a class="button detailButton" href="Detailed.html">Detail</a>
                             </div>
                         </div>
                     </nav>

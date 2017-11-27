@@ -1,17 +1,29 @@
 p.personalInfo {
-    font-size: 18px;
+    font-size: 16px;
     color: #56AEDD;
     height: 40px;
     line-height: 40px;
 }
 
 p.houseInfo {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     height: 40px;
     line-height: 40px;
 }
+a.personalInfo {
+    font-size: 16px;
+    color: #56AEDD;
+    height: 40px;
+    line-height: 40px;
+}
 
+a.houseInfo {
+    font-size: 16px;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
 .PersonandHouseInfo{
     border-bottom: thin solid #979797;
     margin: 10px 35px 20px 25px;
