@@ -18,6 +18,23 @@
 </head>
 
 <body>
+
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">You get a match!</p>
+            <!-- <button class="delete" aria-label="close"></button> -->
+          </header>
+          <section class="modal-card-body">
+             This house's owner is also interested in your house!
+          </section>
+          <footer class="modal-card-foot">
+            <a class="button is-success" href="list.html">View</a>
+            <button class="button" id="close">Cancel</button>
+          </footer>
+        </div>
+      </div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <span class="navbar-item">
@@ -117,7 +134,7 @@
                 </a>
             </div>
             <div class="level-item">
-                <a class="button is-danger is-mobile">Like</a>
+                <button class="button is-danger is-mobile" id="like">Like</button>
             </div>
             <div class="level-item">
                 <a class="button is-primary is-mobile">Contact Owner</a>
@@ -148,6 +165,21 @@
           });
         });
       }
+
+
+      var like = document.getElementById("like");
+        like.addEventListener('click', function(){
+            var modal = document.getElementById("modal");
+            modal.classList.toggle('is-active');
+        });
+
+      
+
+        var close = document.getElementById("close");
+        close.addEventListener('click', function(){
+            var modal = document.getElementById("modal");
+            modal.classList.toggle('is-active');
+        });
 
     });
   </script>
