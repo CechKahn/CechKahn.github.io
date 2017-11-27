@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./custom.css">
+    <style>
+        .navbar,
+        .navbar * {
+            background-color: #130A32;
+            color: white;
+        }
+
+        .button-panel {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
+    padding: 5px 0;
+}
+    </style>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+    
+          // Get all "navbar-burger" elements
+          var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+    
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+              $el.addEventListener('click', function () {
+    
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+    
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+    
+              });
+            });
+          }
+    
+        });
+      </script>
+</head>
+
+<body>
+
+    <div class="container" style="padding:10px">
+        <h1 class="title"> Colors </h1>
+        <h4 class="title is-4">#130A32</h2>
+            <div style="height:30px; width: 300px; background-color:#130A32"></div>
+            <br/>
+            <h4 class="title is-4">#FB9727</h2>
+                <div style="height:30px; width: 300px; background-color:#FB9727"></div>
+
+                <br/>
+                <br/>
+
+                <h1 class="title"> Typography </h1>
+                <h1 class="title is-1">Title 1</h1>
+                <h2 class="title is-2">Title 2</h2>
+                <h3 class="title is-3">Title 3</h3>
+                <h4 class="title is-4">Title 4</h4>
+                <h5 class="title is-5">Title 5</h5>
+                <h6 class="title is-6">Title 6</h6>
+
+
+                <br/>
+                <br/>
+
+                <h1 class="title"> Buttons </h1>
+                <a class="button">Normal</a>
+                <a class="button is-primary">Normal</a>
+                <a class="button is-link">Normal</a>
+                <a class="button is-info">Normal</a>
+                <a class="button is-success">Normal</a>
+                <a class="button is-warning">Normal</a>
+                <a class="button is-danger">Normal</a>
+
+                <br/>
+                <br/>
+
+
+                <a class="button is-link is-fullwidth" style="max-width:600px">
+                    full width button
+                </a>
+
+
+                <br/>
+                <br/>
+
+                <h1 class="title"> Forms </h1>
+                <div class="container is-fluid add-padding">
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" placeholder="Full Name">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-address-card" aria-hidden="true"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Email">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" type="password" placeholder="Password">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                            <a class="button is-link is-fullwidth" href="Homepage.html">
+                                Register
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <br/>
+                <br/>
+
+                <h1 class="title"> Icons </h1>
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-lock"></i>
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-comments-o"></i>
+
+                <br/>
+                <br/>
+
+                <h1 class="title"> Navbar </h1>
+
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                          <span class="navbar-item">
+                            <img src="logo.png" height="28px">
+                          </span>
+                          <span class="navbar-item" style="font-weight:bold;">
+                              Switch Home
+                          </span>
+                          <button class="button navbar-burger" data-target="navMenu" style="border:none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </button>
+                        </div>
+                    
+                        <div class="navbar-menu" id="navMenu">
+                          <div class="navbar-start">
+                            <a class="navbar-item">
+                              Home
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                              Like
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                              Profile
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                              Sign Out
+                            </a>
+                    
+                          </div>
+                          <!-- navbar start, navbar end -->
+                          <span>
+                    
+                          </span>
+                        </div>
+                      </nav>
+                <br/>
+                <br/>
+
+                <h1 class="title"> Control Panel </h1>
+                <p>A control panel is fixed on the bottom of the page to provide some action buttons.</p>
+                <br/>
+                <br/>
+                <br/>
+                
+                <br/>
+                <div class="level is-mobile button-panel">
+                        <!-- Left side -->
+                        <div class="level-left">
+                            <div class="level-item">
+                                <a class="navbar-item" style="border-right: 1px solid lightgrey; ">
+                                    <span class="icon">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="level-item">
+                                <a class="button is-link">
+                                    Button 1
+                                </a>
+                            </div>
+                            <div class="level-item">
+                                    <a class="button is-primary">
+                                            Button 2
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                
+                
+
+    </div>
+
+
+</body>

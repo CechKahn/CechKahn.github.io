@@ -1,0 +1,23 @@
+{
+  "name": "switchhome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markzy/SwitchHome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markzy/SwitchHome/issues"
+  },
+  "homepage": "https://github.com/markzy/SwitchHome#readme",
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "vue-bulma-datepicker": "^1.3.6"
+  }
+}

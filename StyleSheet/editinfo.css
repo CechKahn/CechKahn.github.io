@@ -1,0 +1,63 @@
+p.personalInfo {
+    font-size: 18px;
+    color: #56AEDD;
+    height: 40px;
+    line-height: 40px;
+}
+
+p.houseInfo {
+    font-size: 18px;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+.PersonandHouseInfo{
+    border-bottom: thin solid #979797;
+    margin: 10px 35px 20px 25px;
+}
+
+.editfield{
+    margin: 10px 20px 10px 20px;
+    background-color: white;
+}
+
+.avatar-img {
+    border-radius: 100%;
+}
+
+.infolabel {
+    font-size: 18px;
+}
+
+a.cancleEdit {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a.updateinfo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #F2F2F2;
+    background-color: #fc9928;
+    border-radius: 10%;
+}
+
+.houseinfopic {
+    border-radius: 10%;
+}
+
+i.addhousepicicon {
+    color: #56AEDD;
+    margin: 40px 0 0 40px;
+}
+
+.underline {
+    border-bottom: thin solid #979797;
+}
+
+p.infodes {
+    color: #979797;
+    font-size: 18px;
+}
+

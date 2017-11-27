@@ -1,0 +1,20 @@
+
+
+.add-padding{
+    padding: 10px 30px;
+}
+
+hr.solid {
+    border: 1px solid #EEEEEE;
+}
+
+.button-panel {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
+    padding: 5px 0;
+    height: 48px;
+}

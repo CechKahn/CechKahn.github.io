@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Album - Free Bulma template</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bulma Version 0.6.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./css/Detailed.css">
+    <link rel="stylesheet" href="./custom.css">
+
+    <style>
+        .navbar,
+        .navbar * {
+            background-color: #130A32;
+            color: white;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <span class="navbar-item">
+                <img src="logo.png" height="28px">
+            </span>
+            <span class="navbar-item" style="font-weight:bold;">
+                SwitchHome
+            </span>
+            <button class="button navbar-burger" data-target="navMenu" style="border:none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="Homepage.html">
+                    House Listing
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="list.html">
+                    Like
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                    Profile
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="login.html">
+                    Sign Out
+                </a>
+
+            </div>
+            <!-- navbar start, navbar end -->
+            <span>
+
+            </span>
+        </div>
+    </nav>
+
+
+    <div class="columns body-columns main">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <div class="header">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="./images/profile.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Anna's Home</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="./images/3.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>
+                            <strong>House Address</strong>
+                        </p>
+                        1234 High Way, San Francisco, CA, 94035
+                    </div>
+                    <div class="content">
+                        <p>
+                            <strong>House Description</strong>
+                        </p>
+                        The house is 1B1B. It's very convenient to the bus station and supermarket.
+                    </div>
+                    <div class="content">
+                        Estimated Distance Saving :
+                        <strong>5</strong> miles
+                    </div>
+                    <div class="content">
+                        Estimated Time Saving :
+                        <strong>30</strong> minutes
+                    </div>
+
+                    <div class="content" style="height:30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <div class="level is-mobile button-panel" style="margin-bottom:0">
+        <!-- Left side -->
+        <div class="level-left">
+            <div class="level-item">
+                <a class="navbar-item" style="border-right: 1px solid lightgrey; ">
+                    <span class="icon">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="level-item">
+                <a class="button is-danger is-mobile">Like</a>
+            </div>
+            <div class="level-item">
+
+                <a class="button is-warning">Contact Owner</a>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
