@@ -48,13 +48,13 @@
 </head>
 
 <body>
-    <nav class="navbar top-nav" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <span class="navbar-item">
-                <img src="logo.png" height="28px">
+                <a href="Home.html"><img src="logo.png" height="28px"></a>
             </span>
             <span class="navbar-item" style="font-weight:bold;">
-                SwitchHome
+                Favourites
             </span>
             <button class="button navbar-burger" data-target="navMenu" style="border:none">
                 <span></span>
@@ -65,19 +65,27 @@
 
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-                <a class="navbar-item" href="Homepage.html">
+                <a class="navbar-item" style="color: white;" href="Home.html">
+                    Home
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" style="color: white;" href="houselisting.html">
                     House Listing
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item" href="list.html">
-                    Like
+                <a class="navbar-item" style="color: white;" href="list.html">
+                    Favourites
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item" href="infopersonal.html">
-                    Profile
+                <a class="navbar-item" style="color: white;" href="infopersonal.html">
+                    User Profile
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item" href="login.html">
+                <a class="navbar-item" style="color: white;" href="faq.html">
+                    Help
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" style="color: white;" href="login.html">
                     Sign Out
                 </a>
 
@@ -87,20 +95,16 @@
 
 
     <section class="houseListSection">
-        <div class="columns is-gapless is-mobile">
-            <div class="column has-text-centered">
-                <div class="listNameChoosed">
-                    <p class="listName">Match</p>
+        <div class="PersonandHouseInfo">
+            <div class="columns is-gapless is-mobile">
+                <div class="column has-text-centered">
+                    <a class = "choosedtab" href="list.html">Match</a>
                 </div>
-            </div>
-            <div class="column has-text-centered">
-                <div class="listNameNotChoosed">
-                    <p class="listName">Wish List</p>
+                <div class="column has-text-centered">
+                    <a class = "notchoosedtab" href="wishlist.html">Wish List</a>
                 </div>
-            </div>
-            <div class="column has-text-centered">
-                <div class="listNameNotChoosed">
-                    <p class="listName">Saved By</p>
+                <div class="column has-text-centered">
+                    <a class = "notchoosedtab" href="savedbylist.html">Saved By</a>
                 </div>
             </div>
         </div>
@@ -113,165 +117,194 @@
                     </p>
                     <nav class="level is-mobile">
                         <div class="level-left">
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-heart fa-lg houseIconLiked"></i>
-                                </span>
-                            </a>
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-comments-o fa-lg houseIconChat"></i>
-                                </span>
-                            </a>
+                            <!--<a class="level-item">-->
+                                <!--<span class="icon is-medium">-->
+                                    <!--<i class="fa fa-heart fa-lg houseIconLikedFill"></i>-->
+                                <!--</span>-->
+                            <!--</a>-->
+                            <!--<a class="level-item">-->
+                                <!--<span class="icon is-medium">-->
+                                    <!--<i class="fa fa-comments-o fa-lg houseIconChat"></i>-->
+                                <!--</span>-->
+                            <!--</a>-->
                         </div>
                     </nav>
                 </figure>
                 <div class="media-content">
                     <div class="content">
                         <p class="houseinfo">
-                            <strong>1B1B In MTV</strong>
-                            <br> Amazing Opportunity in Fusion! 1 Bed / 1 bath - End Unit TH in the heart of Mountain View!
+                            <strong>6B3B In SunnyVale</strong>
+                            <br> Absolutely stunning Mediterranean style home located in a highly desirable part of Sunnyvale!
                         </p>
                     </div>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <div class="level-item"></div>
-                        </div>
-                        <div class="level-right">
-                            <div class="level-item">
-                                <a class="button contractBTN" href="contract.html">Contract</a>
-                            </div>
-                        </div>
-                    </nav>
+                    <!--<nav class="level is-mobile">-->
+                        <!--<div class="level-left">-->
+                            <!--<div class="level-item"></div>-->
+                        <!--</div>-->
+                        <!--<div class="level-right">-->
+                            <!--<div class="level-item">-->
+                                <!--<a class="button contractBTN" href="contract.html">Sign Contract</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</nav>-->
                 </div>
             </article>
+
+            <nav class="level is-mobile" style="margin-top: 10px;">
+                <div class="level-left">
+                    <div class="level-item">
+                        <a class="button" href="#">Remove</a>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <a class="button contractBTN" href="contract.html">Sign Contract</a>
+                    </div>
+                </div>
+            </nav>
         </div>
 
         <div class="houselist">
             <article class="media">
                 <figure class="media-left">
                     <p class="image is-96x96">
-                        <img src="assets/listHouse.jpg">
+                        <img src="assets/listHouse3.jpg">
                     </p>
                     <nav class="level is-mobile">
                         <div class="level-left">
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-heart fa-lg houseIconLiked"></i>
-                                </span>
-                            </a>
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-comments-o fa-lg houseIconChat"></i>
-                                </span>
-                            </a>
+                            <!--<a class="level-item">-->
+                                <!--<span class="icon is-medium">-->
+                                    <!--<i class="fa fa-heart fa-lg houseIconLikedFill"></i>-->
+                                <!--</span>-->
+                            <!--</a>-->
+                            <!--<a class="level-item">-->
+                                <!--<span class="icon is-medium">-->
+                                    <!--<i class="fa fa-comments-o fa-lg houseIconChat"></i>-->
+                                <!--</span>-->
+                            <!--</a>-->
                         </div>
                     </nav>
                 </figure>
                 <div class="media-content">
                     <div class="content">
                         <p class="houseinfo">
-                            <strong>1B1B In MTV</strong>
-                            <br> Amazing Opportunity in Fusion! 1 Bed / 1 bath - End Unit TH in the heart of Mountain View!
+                            <strong>3B2.5B In Palo Alto</strong>
+                            <br>Wow! Rarely available 3BR/2.5BA College Terrace 2-story home on a highly desirable tree-lined street w/ charm galore & excellent floor plan.
                         </p>
                     </div>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <div class="level-item"></div>
-                        </div>
-                        <div class="level-right">
-                            <div class="level-item">
-                                <a class="button contractBTN" href="contract.html">Contract</a>
-                            </div>
-                        </div>
-                    </nav>
+                    <!--<nav class="level is-mobile">-->
+                        <!--<div class="level-left">-->
+                            <!--<div class="level-item"></div>-->
+                        <!--</div>-->
+                        <!--<div class="level-right">-->
+                            <!--<div class="level-item">-->
+                                <!--<a class="button contractBTN" href="contract.html">Sign Contract</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</nav>-->
                 </div>
             </article>
+
+            <nav class="level is-mobile" style="margin-top: 10px;">
+                <div class="level-left">
+                    <div class="level-item">
+                        <a class="button" href="#">Remove</a>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <a class="button contractBTN" href="contract.html">Sign Contract</a>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <div class="houselist">
-            <article class="media">
-                <figure class="media-left">
-                    <p class="image is-96x96">
-                        <img src="assets/listHouse.jpg">
-                    </p>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-heart fa-lg houseIconLiked"></i>
-                                </span>
-                            </a>
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-comments-o fa-lg houseIconChat"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </nav>
-                </figure>
-                <div class="media-content">
-                    <div class="content">
-                        <p class="houseinfo">
-                            <strong>1B1B In MTV</strong>
-                            <br> Amazing Opportunity in Fusion! 1 Bed / 1 bath - End Unit TH in the heart of Mountain View!
-                        </p>
-                    </div>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <div class="level-item"></div>
-                        </div>
-                        <div class="level-right">
-                            <div class="level-item">
-                                <a class="button contractBTN" href="contract.html">Contract</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </article>
-        </div>
+        <!--<div class="houselist">-->
+            <!--<article class="media">-->
+                <!--<figure class="media-left">-->
+                    <!--<p class="image is-96x96">-->
+                        <!--<img src="assets/listHouse2.jpg">-->
+                    <!--</p>-->
+                    <!--<nav class="level is-mobile">-->
+                        <!--<div class="level-left">-->
+                            <!--&lt;!&ndash;<a class="level-item">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="icon is-medium">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i class="fa fa-heart fa-lg houseIconLikedFill"></i>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a class="level-item">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="icon is-medium">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i class="fa fa-comments-o fa-lg houseIconChat"></i>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</nav>-->
+                <!--</figure>-->
+                <!--<div class="media-content">-->
+                    <!--<div class="content">-->
+                        <!--<p class="houseinfo">-->
+                            <!--<strong>4B4B In Menlo Park</strong>-->
+                            <!--<br>Frank Lloyd Wright would "LIKE" this bright and spacious 4/3.5 just 3 miles from Facebook HQ!-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;<nav class="level is-mobile">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="level-left">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="level-item"></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="level-right">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="level-item">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<a class="button contractBTN" href="contract.html">Sign Contract</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</nav>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</article>-->
 
-        <div class="houselist">
-            <article class="media">
-                <figure class="media-left">
-                    <p class="image is-96x96">
-                        <img src="assets/listHouse.jpg">
-                    </p>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-heart fa-lg houseIconLiked"></i>
-                                </span>
-                            </a>
-                            <a class="level-item">
-                                <span class="icon is-medium">
-                                    <i class="fa fa-comments-o fa-lg houseIconChat"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </nav>
-                </figure>
-                <div class="media-content">
-                    <div class="content">
-                        <p class="houseinfo">
-                            <strong>1B1B In MTV</strong>
-                            <br> Amazing Opportunity in Fusion! 1 Bed / 1 bath - End Unit TH in the heart of Mountain View!
-                        </p>
-                    </div>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <div class="level-item"></div>
-                        </div>
-                        <div class="level-right">
-                            <div class="level-item">
-                                <a class="button contractBTN" href="contract.html">Contract</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </article>
-        </div>
+            <!--<nav class="level is-mobile" style="margin-top: 10px;">-->
+                <!--<div class="level-left">-->
+                    <!--<div class="level-item">-->
+                        <!--<a class="button" href="#">Remove</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="level-right">-->
+                    <!--<div class="level-item">-->
+                        <!--<a class="button contractBTN" href="contract.html">Sign Contract</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+        <!--</div>-->
+
+        <!--<div class="houselist">-->
+            <!--<article class="media">-->
+                <!--<figure class="media-left">-->
+                    <!--<p class="image is-96x96">-->
+                        <!--<img src="assets/listHouse1.jpg">-->
+                    <!--</p>-->
+                    <!---->
+                <!--</figure>-->
+                <!--<div class="media-content">-->
+                    <!--<div class="content">-->
+                        <!--<p class="houseinfo">-->
+                            <!--<strong>1B1B In MTV</strong>-->
+                            <!--<br> Amazing Opportunity in Fusion! 1 Bed / 1 bath - End Unit TH in the heart of Mountain View!-->
+                        <!--</p>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</article>-->
+            <!--<nav class="level is-mobile" style="margin-top: 10px;">-->
+                <!--<div class="level-left">-->
+                    <!--<div class="level-item">-->
+                        <!--<a class="button" href="#">Remove</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="level-right">-->
+                    <!--<div class="level-item">-->
+                        <!--<a class="button contractBTN" href="contract.html">Sign Contract</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+        <!--</div>-->
 
     </section>
 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="stylesheet" href="./custom.css">
+  <style>
+    .navbar, .navbar *{
+      background-color:#130A32;
+      color: white;
+    }
+    a.detailButton{
+      background-color:#130A32;
+      color: white;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <span class="navbar-item">
+        <a href="Home.html"><img src="logo.png" height="28px"></a>
+      </span>
+      <span class="navbar-item" style="font-weight:bold;color:white;">
+          Home
+      </span>
+      <button class="button navbar-burger" data-target="navMenu" style="border:none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" style="color: white;" href="Home.html">
+          Home
+        </a>
+        <hr class="navbar-divider">
+        <a class="navbar-item" style="color: white;" href="houselisting.html">
+          House Listing
+        </a>
+        <hr class="navbar-divider">
+        <a class="navbar-item" style="color: white;" href="list.html">
+          Favourites
+        </a>
+        <hr class="navbar-divider">
+        <a class="navbar-item" style="color: white;" href="infopersonal.html">
+          User Profile
+        </a>
+        <hr class="navbar-divider">
+        <a class="navbar-item" style="color: white;" href="faq.html">
+          Help
+        </a>
+        <hr class="navbar-divider">
+        <a class="navbar-item" style="color: white;" href="login.html">
+          Sign Out
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+  <div class="box" style="margin: 0px;">
+  <nav class="level" style="margin: 30px;">
+    <div class="level-left">
+      <div class="level-item">
+        <a class="button detailButton" href="houselisting.html">
+        House Listing
+        </a>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        <p> You can find all the houses that help you save time on the traffic here. You can choose whether you like the house in detail page.</p>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <div class="box" style="margin: 0px;">
+  <nav class="level" style="margin: 30px;">
+    <div class="level-left">
+      <div class="level-item">
+        <a class="button detailButton" href="list.html">
+        Favourites
+        </a>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        <p> You can find the matched houses here. It means you both like each other's houses and can consider to switch. You can also find the house list that you like and the house list whose owners like yours.</p>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="box" style="margin: 0px;">
+  <nav class="level" style="margin: 30px;">
+    <div class="level-left">
+      <div class="level-item">
+        <a class="button detailButton" href="infopersonal.html">
+        User Profile
+        </a>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        <p> Manage your personal information and house information here. It'll help you precisely find the houses that help you save time.</p>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="box" style="margin: 0px;">
+  <nav class="level" style="margin: 30px;">
+    <div class="level-left">
+      <div class="level-item">
+        <a class="button detailButton" href="faq.html">
+        Help
+        </a>
+      </div>
+    <div class="level-right">
+      <div class="level-item">
+        <p>You can find some common problems here.</p>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="box" style="margin: 0px;">
+  <nav class="level" style="margin: 30px;">
+    <div class="level-left">
+      <div class="level-item">
+        <a class="button detailButton" href="login.html">
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+  
+</body>
+
+
+</html>

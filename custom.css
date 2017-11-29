@@ -1,4 +1,9 @@
-
+.navbar,
+.navbar * {
+    background-color: #130A32;
+    color: white;
+    z-index: 1;
+}
 
 .add-padding{
     padding: 10px 30px;

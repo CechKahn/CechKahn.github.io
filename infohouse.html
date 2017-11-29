@@ -8,17 +8,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="StyleSheet/editinfo.css">
     <link rel="stylesheet" href="custom.css">
+    <style>
+        .navbar, .navbar *{
+          background-color:#130A32;
+          color: white;
+        }
+    </style>
     
 </head>
 <body>
     <section class="editInfoPersonalSection">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <span class="navbar-item">
+        <a href="Home.html"><img src="logo.png" height="28px"></a>
+      </span>
+      <span class="navbar-item" style="font-weight:bold;color:white;">
+          User Profile
+      </span>
+      <button class="button navbar-burger" data-target="navMenu" style="border:none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+              <a class="navbar-item" style="color: white;" href="Home.html">
+                Home
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" style="color: white;" href="houselisting.html">
+                House Listing
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" style="color: white;" href="list.html">
+                Favourites
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" style="color: white;" href="infopersonal.html">
+                User Profile
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" style="color: white;" href="faq.html">
+                Help
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" style="color: white;" href="login.html">
+                Sign Out
+              </a>
+
+            </div>
+          </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
         <div class="PersonandHouseInfo">
             <div class="columns is-gapless is-mobile">
                 <div class="column has-text-centered">
                     <a class = "houseInfo" href="infopersonal.html">Personal Information</a>
                 </div>
                 <div class="column has-text-centered">
-                    <a class = "personalInfo" href="infohouse.html">House Information</a>
+                    <a class = "personalInfo" href="infohouse.html" style="color:#56AEDD;">House Information</a>
                 </div>
             </div>
         </div>
@@ -69,19 +147,14 @@
     </section>
 
     <div class="level is-mobile button-panel" style="margin-bottom:0">
-        <!-- Left side -->
-        <div class="level-left">
-            <div class="level-item">
-                <a class="navbar-item" style="border-right: 1px solid lightgrey; " href="Homepage.html">
-                    <span class="icon">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="level-item">
-                <a class="button is-primary" href="editinfohouse.html">Edit</a>
-            </div>
+      <!-- Left side -->
+      <div class="level-left">
+        <div class="level-item">
+          <a class="navbar-item">
+            <a class="button is-primary" href="editinfohouse.html">Edit House Information</a>
+          </a>
         </div>
+      </div>
     </div>
 </body>
 </html>

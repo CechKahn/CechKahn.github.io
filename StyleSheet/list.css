@@ -1,5 +1,5 @@
 .houseListSection {
-    background-color: #F2F2F2;
+    background-color: white;
     position: absolute;
     top: 60px;
     width: 100%;
@@ -33,11 +33,25 @@ p.houseinfo {
     font-size: 14px;
 }
 
+a.choosedtab {
+    font-size: 16px;
+    color: #56AEDD;
+    height: 40px;
+    line-height: 40px;
+}
+
+a.notchoosedtab {
+    font-size: 16px;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
 .houselist {
     padding: 15px 5px 5px 10px;
     margin: 10px 35px 20px 25px;
     box-shadow: 3px 3px 3px #e3e3e3;
-    background-color: white;
+    background-color: #F2F2F2;
 }
 
 i.houseIconLiked {
@@ -51,4 +65,19 @@ i.houseIconChat {
 a.contractBTN {
     color: #F2F2F2;
     background-color: #3C5175;
+}
+
+.PersonandHouseInfo{
+    border-bottom: thin solid #979797;
+    margin: 10px 35px 20px 25px;
+}
+
+i.houseIconLiked {
+    color: #F2F2F2;
+    text-shadow: 0px 0px 3px #ff0000;
+}
+
+i.houseIconLikedFill {
+    color: #ff0000;
+    text-shadow: 0px 0px 3px #ff0000;
 }

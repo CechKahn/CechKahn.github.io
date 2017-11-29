@@ -12,14 +12,16 @@ p.houseInfo {
     line-height: 40px;
 }
 a.personalInfo {
-    font-size: 16px;
-    color: #56AEDD;
+    font-size: 14px;
+    /*color: #56AEDD;*/
     height: 40px;
     line-height: 40px;
+    color: black;
+    font-weight: bold;
 }
 
 a.houseInfo {
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     height: 40px;
     line-height: 40px;
